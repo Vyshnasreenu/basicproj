@@ -1,0 +1,35 @@
+.contact-card{
+height: 200vh;
+background-color: aliceblue;
+/* position: fixed; */
+/* width: 100%; */
+}
+.searchContact-list{
+    margin: 10px;
+}
+.conPosition{
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    z-index: 1;
+}
+.contact-list{
+    background-color: greenyellow;
+}
+.card{
+    border-radius: 10px;
+    background-color:rgb(19, 18, 18);
+    color: white;
+    border-right: 10px groove greenyellow;
+    border-bottom: 5px groove greenyellow;
+cursor: pointer;
+}
+.card:hover{
+    /* transition: all; */
+    background-color: gray;
+}
+.UserImage{
+    height: 120px;
+    width: 130px;
+    border-radius: 40px;
+}
