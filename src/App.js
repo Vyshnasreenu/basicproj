@@ -8,7 +8,8 @@ import './App.css';
 import Filter from './components/BasicProjectOnReact/SearchFilter/Filter';
 import Calculator from './components/BasicProjectOnReact/CalculatorApp/Calculator';
 import ContactList from './components/BasicProjectOnReact/ContactApp/ContactList';
-import { CallPerson } from './components/BasicProjectOnReact/ContactApp/CallPerson';
+import RecipeApp from './components/RecipeProj/RecipeApp';
+import { CurrenWeather } from './components/BasicProjectOnReact/WeatherApp/CurrenWeather';
 function App() {
   return (
     <div className="App">
@@ -31,9 +32,11 @@ function App() {
     {/* <TodoApp/> */}
  {/* <Calculator/> */}
 
- <ContactList/>
+ {/* <ContactList/> */}
 
-{/* <CallPerson/> */}
+{/* <RecipeApp/> */}
+
+<CurrenWeather/>
     </div>
   );
 }
