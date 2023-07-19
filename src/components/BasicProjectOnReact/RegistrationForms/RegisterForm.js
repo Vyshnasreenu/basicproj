@@ -51,8 +51,8 @@ export const RegisterForm = () => {
   }
   return (
     <div>
-        <div style={{height:"500px",width:"50%",margin:"10%"}}>
-             <div className='border w-100 '>
+        <div style={{height:"500px",width:"%",margin:"10%"}}>
+             <div className='border '>
                 <div>
                     <label>RegisterForm</label>
                     <hr/>
