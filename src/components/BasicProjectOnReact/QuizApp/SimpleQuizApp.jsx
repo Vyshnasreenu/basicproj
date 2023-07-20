@@ -78,7 +78,7 @@ const SubmitQuiz=(e)=>{
 }
 
   return (
-    <div>
+    <div className="d-flex justify-content-center container">
         <div className="question-box">
              <div className="heading">
                  <span className='fs-3'>Questions {question+1}</span>/{Questions.length}
@@ -95,10 +95,10 @@ const SubmitQuiz=(e)=>{
               </div>
              </div>:(
               <div className=''>
-                 <div className='col-md-6 Question'>
+                 <div className='col Question'>
                  {Questions[question]?.QuestionText}
                  </div>
-                 <div className='col m-5'>
+                 <div className='col'>
                     {Questions[question]?.AnswerQuestions.map((ans)=>{
                         return(
                          <div className='col'>

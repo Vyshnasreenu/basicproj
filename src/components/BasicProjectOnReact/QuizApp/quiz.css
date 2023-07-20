@@ -1,14 +1,18 @@
 .question-box{
     border: 1px solid black;
-    margin: 10%;
+    margin: 5%;
     /* height: 200px; */
      width: 70%;
     height: 80vh;
     /* background-color: black; */
     border-radius: 40px;
     /* background-image:url('/public/quizBack.jpg'); */
-    /* background-repeat: no-repeat; */
+    background-image: url('../../../../public/quiz2.jpg');
+    /* background-color: antiquewhite; */
+    background-repeat: no-repeat;
     background-size: cover;
+    /* position: fixed; */
+    /* left: 100px; */
     background-position:center;
 
     /* margin: auto; */
@@ -22,9 +26,12 @@
      color:springgreen;
 }
 .Question{
-    margin: auto;
+    /* margin: ; */
     font-size:x-large;
+    display: flex;
+    justify-content: center;
     color:white;
+    margin: 50px;
 }
 
 *{
