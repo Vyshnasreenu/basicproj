@@ -7,6 +7,7 @@ import { RegisterForm } from './components/BasicProjectOnReact/RegistrationForms
 import './App.css';
 import Filter from './components/BasicProjectOnReact/SearchFilter/Filter';
 import Calculator from './components/BasicProjectOnReact/CalculatorApp/Calculator';
+import R10 from './components/ExamplDemoProj/R10';
 function App() {
   return (
     <div className="App">
@@ -27,8 +28,9 @@ function App() {
 
 {/* <NavBar/> */}
     {/* <TodoApp/> */}
- <Calculator/>
+ {/* <Calculator/> */}
 
+<R10/>
     </div>
   );
 }
