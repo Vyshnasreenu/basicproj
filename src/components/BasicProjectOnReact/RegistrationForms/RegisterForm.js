@@ -37,11 +37,13 @@ export const RegisterForm = () => {
       else if(!regex.test(userNames.Email)){
         alert("This is not a valid email format")
       
-        document.getElementById("email").style.color="black"
       }
      else if(userNames.firstName!=="" && userNames.secondName!=="" && userNames.Email!=="" ){
         alert("Registered successfully!!!!")
         console.log(userNames)
+        document.getElementById("email").style.color="black"
+      }
+      else{
       }
 
 
@@ -51,8 +53,8 @@ export const RegisterForm = () => {
   }
   return (
     <div>
-        <div style={{height:"500px",width:"50%",margin:"10%"}}>
-             <div className='border w-100 '>
+        <div style={{height:"500px",width:"%",margin:"10%"}}>
+             <div className='border '>
                 <div>
                     <label>RegisterForm</label>
                     <hr/>

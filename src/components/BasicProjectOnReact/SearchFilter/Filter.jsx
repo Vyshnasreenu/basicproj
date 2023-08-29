@@ -23,6 +23,7 @@ const [selected,setSelected]=useState(true)
        className='form-control'
        style={{width:"50%"}}
        value={name}
+       autoComplete='off'
        onChange={(e)=>{setName(e.target.value)
        setSelected(true)
       }}

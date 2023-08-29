@@ -1,0 +1,45 @@
+
+.weather-box{ 
+    height: 100vh;
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    /* transition: background-color 0.5s ease; */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgba(65,143,222,1) 79% );
+}
+
+.weather-data{
+    padding: 50px;
+}
+.weather-temp{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.curren-date{
+    font-size: 20px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+}
+.degree-in-city{
+    margin: auto;
+    padding: 15px 15px;
+}
+.degrees{
+    border: 1px solid white;
+    border-radius:  0px 0px 15px 15px;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 19px;
+    color: whitesmoke;
+}
+.degrees:hover{
+    background-color: ghostwhite;
+    color: blue;
+}
+.default-style{
+    font-size: 19px;
+    font-weight: 600;
+    color: darkblue;
+    font-family: monospace;
+}

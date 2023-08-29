@@ -7,6 +7,14 @@ import { RegisterForm } from './components/BasicProjectOnReact/RegistrationForms
 import './App.css';
 import Filter from './components/BasicProjectOnReact/SearchFilter/Filter';
 import Calculator from './components/BasicProjectOnReact/CalculatorApp/Calculator';
+import ContactList from './components/BasicProjectOnReact/ContactApp/ContactList';
+import { CurrenWeather } from './components/BasicProjectOnReact/WeatherApp/CurrenWeather';
+import Navbar from './components/BasicProjectOnReact/ResponsiveWeb/Navbar';
+import AdventureHome from './components/BasicProjectOnReact/ResponsiveWeb/AdventureHome';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SingUpBox from './components/BasicProjectOnReact/ResponsiveWeb/SingUpBox';
+import { CustomPopup } from './components/CustomPopup';
+import TemperatureControlApp from './components/BasicProjectOnReact/TemperatureControls/TemperatureControlApp';
 import R10 from './components/ExamplDemoProj/R10';
 function App() {
   return (
@@ -15,7 +23,6 @@ function App() {
 {/* <RegisterForm/> */}
 {/* <TemperatureControlApp/> */}
 {/* <Filter/> */}
-{/* <SimpleQuizApp/> */}
 
 
 {/* <BrowserRouter>
@@ -28,7 +35,7 @@ function App() {
 
 {/* <NavBar/> */}
     {/* <TodoApp/> */}
- {/* <Calculator/> */}
+ <Calculator/>
 
 <R10/>
     </div>
