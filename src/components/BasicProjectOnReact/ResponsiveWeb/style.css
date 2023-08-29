@@ -30,6 +30,8 @@
     font-weight: 600;
     font-size: 20px;
     padding: 10%;
+    position:initial;
+    /* top: 1px */
 }
 
 .nav-link:active{
@@ -40,6 +42,7 @@
     border: 1px solid white;
     display: inline;
     height: 50px;
+    position: initial;
     /* width: 10%; */
     border-radius: 30px;
     /* background-color: white; */
@@ -53,6 +56,7 @@
     box-shadow: 10px 10px 5px #aaaaaa;
     /* height: 30%; */
     cursor: pointer;
+    position: initial;
 }
 
 .image{
@@ -62,6 +66,17 @@
     box-shadow: 7px 8px 7px #aaaaaa;
     cursor: pointer;
     width: 80%;
+    position: inherit;
     margin: auto;
+}
+.face-goog-parent{
+    cursor: pointer;
+    border-radius: 2px 1px;
+    height: 35px;
+}
+.face-goog{
+    color: white;
+    font-weight: 400;
+    font-size: 1.0rem;
 }
 

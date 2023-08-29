@@ -34,14 +34,14 @@ const AdventureHome = () => {
           </div>
         </div>
       </div>
-      <div className='' style={{ height: "950px", width: "100%" }}>
+      <div className='' style={{ height: "", width: "100%" }}>
         <div className='container'>
           <div>
             <h1>Why Choose Us Your Fitness Builder</h1>
             <p>Who are in extremely love with eco friendly system.</p>
           </div>
           <div className='row' style={{ marginTop: "100px" }}>
-            <div className='col-sm-6'>
+            <div className='col-sm-6' style={{position:"inherit"}}>
               <div className='row'
               // style={{ transform: window.innerWidth > 768 ? "rotate(10deg)" : "" }}
               >
@@ -58,7 +58,7 @@ const AdventureHome = () => {
                 Wastege Stand out
               </h1>
 
-              <div className='m-5'>
+              <div className='m-3'>
                 <p className='text-start'>inappropriate behavior is often laughed off as “boys will be boys,” <br />
                   women face higher conduct standards – especially in the workplace. <br />
                   That’s why it’s crucial that, as women.</p>
@@ -76,8 +76,8 @@ const AdventureHome = () => {
         </div>
       </div>
       {/* <div className='container-fluid'> */}
-      <div className='border bg-info' style={{ height: '500px', }}>
-        <div className='row d-flex align-items-center border' style={{ height: "200px" }}>
+      <div className='border bg-info' style={{marginTop: "100px" }}>
+        <div className='row d-flex align-items-center border' style={{ height: "" }}>
           <h2>Latest Project on the go</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br />
             labore et dolore magna aliqua.</p>

@@ -5,7 +5,6 @@ const TemperatureControlApp = () => {
   const [temperature,setTemperature]=useState(10)
   const[temperatureColor,setTemperatureColor]=useState("cold")
   const increaseTemperature=(event)=>{
-    console.log(event.target.value)
      if(event.target.value>=15){
       setTemperatureColor("hot")
      }
@@ -22,7 +21,8 @@ const TemperatureControlApp = () => {
         <div className="app-container">
         <div className="temperature-display-container">
             <div className={`temperature-dispaly ${temperatureColor}`}>
-               {temperature}&deg;C
+               {temperature}&deg;C  <hr />
+               {temperatureColor}
             </div>
             <div className="temperature-container p-4">
                <Button variant='contained' onClick={(event)=>increaseTemperature(event)} value={temperature}>+</Button>

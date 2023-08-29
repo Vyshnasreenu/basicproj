@@ -83,12 +83,12 @@ export const CurrenWeather = () => {
           <div className="col-sm-3 p-3"><h2 className='text-warning'>WeatherInfo</h2>
           </div>
         </div>
-        <div className="d-flex justify-content-center col-sm-6">
-          <div className='search-box m-3 col-sm-4'>
+        <div className="d-flex justify-content-center col-md-6">
+          <div className='search-box m-3 col-7'>
             <input type="text"
               name={inputValue}
               value={inputValue}
-              className='form-control m-auto col'
+              className='form-control m-auto'
               placeholder='Search Location'
               onChange={(e) => setInputvalue(e.target.value)}
             />

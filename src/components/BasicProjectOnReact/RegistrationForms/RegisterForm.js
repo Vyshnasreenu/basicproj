@@ -37,11 +37,13 @@ export const RegisterForm = () => {
       else if(!regex.test(userNames.Email)){
         alert("This is not a valid email format")
       
-        document.getElementById("email").style.color="black"
       }
      else if(userNames.firstName!=="" && userNames.secondName!=="" && userNames.Email!=="" ){
         alert("Registered successfully!!!!")
         console.log(userNames)
+        document.getElementById("email").style.color="black"
+      }
+      else{
       }
 
 

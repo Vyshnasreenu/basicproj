@@ -9,12 +9,12 @@ import Filter from './components/BasicProjectOnReact/SearchFilter/Filter';
 import Calculator from './components/BasicProjectOnReact/CalculatorApp/Calculator';
 import ContactList from './components/BasicProjectOnReact/ContactApp/ContactList';
 import { CurrenWeather } from './components/BasicProjectOnReact/WeatherApp/CurrenWeather';
-import RecipeApp from './components/RecipeProj/RecipeApp';
 import Navbar from './components/BasicProjectOnReact/ResponsiveWeb/Navbar';
 import AdventureHome from './components/BasicProjectOnReact/ResponsiveWeb/AdventureHome';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SingUpBox from './components/BasicProjectOnReact/ResponsiveWeb/SingUpBox';
 import { CustomPopup } from './components/CustomPopup';
+import TemperatureControlApp from './components/BasicProjectOnReact/TemperatureControls/TemperatureControlApp';
 function App() {
   return (
     <div className="App">
@@ -22,15 +22,14 @@ function App() {
 {/* <RegisterForm/> */}
 {/* <TemperatureControlApp/> */}
 {/* <Filter/> */}
-{/* <SimpleQuizApp/> */}
 
 
-<BrowserRouter>
+{/* <BrowserRouter>
 <Routes>
   <Route path="/" element={<HomePage/>}></Route>
   <Route path="/quiz" element={<SimpleQuizApp/>}></Route>
 </Routes>
-</BrowserRouter>
+</BrowserRouter> */}
 
 
 {/* <NavBar/> */}
@@ -50,8 +49,8 @@ function App() {
 
 </BrowserRouter> */}
 
+
 {/* <CustomPopup/> */}
-{/* <Navbar/> */}
 
     </div>
   );
