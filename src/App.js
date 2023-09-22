@@ -16,16 +16,20 @@ import SingUpBox from './components/BasicProjectOnReact/ResponsiveWeb/SingUpBox'
 import { CustomPopup } from './components/CustomPopup';
 import TemperatureControlApp from './components/BasicProjectOnReact/TemperatureControls/TemperatureControlApp';
 import R10 from './components/ExamplDemoProj/R10';
+import MonthView from './components/ExampleProj/MonthView';
+import HighAuthorityView from './components/ExampleProj/HighAuthorityView';
+import Demo from './components/ExamplDemoProj/Demo';
+import Todos from './components/ExamplDemoProj/Todos';
 function App() {
   return (
     <div className="App">
-  
-{/* <RegisterForm/> */}
-{/* <TemperatureControlApp/> */}
-{/* <Filter/> */}
+
+      {/* <RegisterForm/> */}
+      {/* <TemperatureControlApp/> */}
+      {/* <Filter/> */}
 
 
-{/* <BrowserRouter>
+      {/* <BrowserRouter>
 <Routes>
   <Route path="/" element={<HomePage/>}></Route>
   <Route path="/quiz" element={<SimpleQuizApp/>}></Route>
@@ -33,11 +37,20 @@ function App() {
 </BrowserRouter> */}
 
 
-{/* <NavBar/> */}
-    {/* <TodoApp/> */}
- <Calculator/>
+      {/* <NavBar/> */}
+      {/* <TodoApp/> */}
+      {/* <Calculator/> */}
+      {/* <MonthView/> */}
+      {/* <R10/> */}
 
-<R10/>
+
+
+      {/* <HighAuthorityView/> */}
+      {/* <Demo /> */}
+
+
+<Todos/>
+
     </div>
   );
 }
