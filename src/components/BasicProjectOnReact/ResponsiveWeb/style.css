@@ -7,8 +7,9 @@
     transition: 0.4s ease-in-out;
 }
 .header.scrolled{
-    background-color: black;
+    background-color: rgb(75 214 247);
     opacity: 0.98;
+    color: black;
 }
 .homepage{
     height: 100vh;
@@ -33,7 +34,10 @@
     position:initial;
     /* top: 1px */
 }
-
+.nav-item{
+    color: green;
+    /* background-color: yellow; */
+}
 .nav-link:active{
     background-color: white;
 }

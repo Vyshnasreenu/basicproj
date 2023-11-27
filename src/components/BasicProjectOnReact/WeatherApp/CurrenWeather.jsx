@@ -9,7 +9,7 @@ export const CurrenWeather = () => {
 
   const [weatherData, setWeatherdata] = useState()
   const [open, setOpen] = useState(false)
-  const [isCheck,setIscheck]=useState(false)
+  const [isCheck, setIscheck] = useState(false)
   const [inputValue, setInputvalue] = useState("Paris")
   const [currenDate, setCurrentdate] = useState(new Date())
 
@@ -24,7 +24,7 @@ export const CurrenWeather = () => {
 
     day = currenDate.getDay();
     date = currenDate.getDate();
-    month = currenDate.getMonth() + 1;
+    month = currenDate.getMonth();
     year = currenDate.getUTCFullYear();
 
     return (`${dayNames[day]} ${date} ${monthNames[month]} ${year}`)
@@ -49,7 +49,7 @@ export const CurrenWeather = () => {
 
   const checkWeatherLocation = () => {
     getWeatherData();
-    if(inputValue===""){
+    if (inputValue === "") {
       setIscheck(true)
     }
     else setIscheck(false)
@@ -101,12 +101,12 @@ export const CurrenWeather = () => {
       <div className="weather-box">
         <div className="weather-data">
           <div className="weather-temp">
-            {!isCheck?(
+            {!isCheck ? (
               <div>
-               { weatherData?.location?.name}
-               <img src={weatherData?.current?.condition?.icon} alt='' />
+                {weatherData?.location?.name}
+                <img src={weatherData?.current?.condition?.icon} alt='' />
               </div>
-               ):"Please search for Location!!"} 
+            ) : "Please search for Location!!"}
           </div>
           <div className='curren-date'>
             {settingDate()}

@@ -12,7 +12,7 @@ import { CurrenWeather } from './components/BasicProjectOnReact/WeatherApp/Curre
 import Navbar from './components/BasicProjectOnReact/ResponsiveWeb/Navbar';
 import AdventureHome from './components/BasicProjectOnReact/ResponsiveWeb/AdventureHome';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import SingUpBox from './components/BasicProjectOnReact/ResponsiveWeb/SingUpBox';
+import SignUpBox from './components/BasicProjectOnReact/ResponsiveWeb/SignUpBox';
 import { CustomPopup } from './components/CustomPopup';
 import TemperatureControlApp from './components/BasicProjectOnReact/TemperatureControls/TemperatureControlApp';
 import R10 from './components/ExamplDemoProj/R10';
@@ -37,19 +37,25 @@ function App() {
 </BrowserRouter> */}
 
 
-      {/* <NavBar/> */}
-      {/* <TodoApp/> */}
-      {/* <Calculator/> */}
-      {/* <MonthView/> */}
-      {/* <R10/> */}
+{/* <NavBar/> */}
+    {/* <TodoApp/> */}
+ {/* <Calculator/> */}
+
+ {/* <ContactList/> */}
+
+{/* <RecipeApp/> */}
+
+{/* <CurrenWeather/> */}
+
+{/* <BrowserRouter>
+<Routes>
+  <Route path='/' element={<AdventureHome/>}></Route>
+</Routes>
+
+</BrowserRouter> */}
 
 
-
-      {/* <HighAuthorityView/> */}
-      {/* <Demo /> */}
-
-
-<Todos/>
+{/* <CustomPopup/> */}
 
     </div>
   );
