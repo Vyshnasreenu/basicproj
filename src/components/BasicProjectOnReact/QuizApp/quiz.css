@@ -2,7 +2,7 @@
     border: 1px solid black;
     margin: 5%;
     /* height: 200px; */
-     width: 70%;
+     width: 90%;
     height: 80vh;
     /* background-color: black; */
     border-radius: 40px;
@@ -20,8 +20,8 @@
 }
 .heading{
     /* border: 1px solid solid; */
-     text-align: left;
-     margin-left: 70px;
+     text-align: center;
+     /* margin-left: 70px; */
      padding: 10px;
      color:springgreen;
 }
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     color:white;
-    margin: 50px;
+    margin-top: 55px;
 }
 
 *{

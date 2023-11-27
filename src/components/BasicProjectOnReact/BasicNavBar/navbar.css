@@ -1,7 +1,10 @@
 
-.heading{
-    text-shadow: 3px 3px 3px black;
+.headingNav{
+    text-shadow: 3px 3px 3px;
     /* text-align: center; */
+    color: whitesmoke;
+    font-family: none;
+    font-size: 3rem;
 }
 /* .bg{  
     background-color: azure;
@@ -15,21 +18,23 @@
     position: sticky;
     top: 0;
     margin: 1px;
+    background: black
 }
 .navLink{
     display: flex;
     justify-content: center;
-    color: purple;
+    color: white;
     font-size: larger;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     padding: 3px;
     width: 100%;
-    border: 1px solid skyblue;
+    /* border: 1px solid skyblue; */
     /* border: 1px solid  */
 }
 .navLink:hover{
- border: 1px solid white;
+ /* border: 1px solid white; */
+ border-bottom: 1px solid white;
 }
 .parg{
     display: inline;
