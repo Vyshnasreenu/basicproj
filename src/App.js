@@ -43,23 +43,23 @@ function App() {
       {/* <Filter/> */}
 
 
-      {/* <BrowserRouter>
-<Routes>
-  <Route path="/" element={<HomePage/>}></Route>
-  <Route path="/quiz" element={<SimpleQuizApp/>}></Route>
-</Routes>
-</BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/quiz" element={<SimpleQuizApp />}></Route>
+        </Routes>
+      </BrowserRouter>
 
 
       {/* <NavBar/> */}
-      {/* <TodoApp/> */}
-      {/* <Calculator/> */}
+      <TodoApp />
+      <Calculator />
 
-      {/* <ContactList/> */}
+      <ContactList />
 
       {/* <RecipeApp/> */}
 
-      <CurrenWeather />
+      {/* <CurrenWeather /> */}
 
       {/* <BrowserRouter>
 <Routes>
