@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/basicproj/static/css/main.8d3228ad.css",
+    "main.js": "/basicproj/static/js/main.b7ca85f3.js",
+    "static/media/adventure2.jpg": "/basicproj/static/media/adventure2.3f2af9bab2b1a3bb27f3.jpg",
+    "static/media/quiz2.jpg": "/basicproj/static/media/quiz2.bc159fd8f21a2ec2c2d0.jpg",
+    "index.html": "/basicproj/index.html",
+    "main.8d3228ad.css.map": "/basicproj/static/css/main.8d3228ad.css.map",
+    "main.b7ca85f3.js.map": "/basicproj/static/js/main.b7ca85f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d3228ad.css",
+    "static/js/main.b7ca85f3.js"
+  ]
+}
