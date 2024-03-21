@@ -20,6 +20,20 @@ import MonthView from './components/ExampleProj/MonthView';
 import HighAuthorityView from './components/ExampleProj/HighAuthorityView';
 import Demo from './components/ExamplDemoProj/Demo';
 import Todos from './components/ExamplDemoProj/Todos';
+import SignIn from './components/Authentication/SignIn';
+import SignUp from './components/Authentication/SignUp';
+import AuthDetails from './components/Authentication/AuthDetails';
+import C from './components/ExamplDemoProj/C';
+import C21 from './components/ExamplDemoProj/C21';
+import C22 from './components/ExamplDemoProj/C22';
+import MyContext from './components/ExamplDemoProj/MyContext';
+import MyReducer from './components/UseReducer/MyReducer';
+import NewFormReducer from './components/UseReducer/NewFormReducer';
+import AddingItem_REDUX from './components/UseReducer/AddingItem_REDUX';
+import PhoneNumberAuth from './components/Authentication/PhoneNumberAuth';
+import { Facebook_Auth } from './components/Authentication/Facebook_Auth';
+import ActiveButtonClick from './components/Learning_React/ActiveButtonClick';
+import { demo } from './components/demo'
 function App() {
   return (
     <div className="App">
@@ -37,17 +51,17 @@ function App() {
 </BrowserRouter> */}
 
 
-{/* <NavBar/> */}
-    {/* <TodoApp/> */}
- {/* <Calculator/> */}
+      {/* <NavBar/> */}
+      {/* <TodoApp/> */}
+      {/* <Calculator/> */}
 
- {/* <ContactList/> */}
+      {/* <ContactList/> */}
 
-{/* <RecipeApp/> */}
+      {/* <RecipeApp/> */}
 
-{/* <CurrenWeather/> */}
+      <CurrenWeather />
 
-{/* <BrowserRouter>
+      {/* <BrowserRouter>
 <Routes>
   <Route path='/' element={<AdventureHome/>}></Route>
 </Routes>
@@ -55,7 +69,48 @@ function App() {
 </BrowserRouter> */}
 
 
-{/* <CustomPopup/> */}
+      {/* <ActiveButtonClick /> */}
+
+
+
+
+
+
+
+      {/* <CustomPopup/> */}
+
+
+
+
+      {/* AUTHENTICATION USING FIREBASE  */}
+
+      {/* <SignIn /> */}
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<SignUp />}></Route>
+          <Route path='/signIn' element={<SignIn />}></Route>
+          <Route path='/auth' element={<AuthDetails />}></Route>
+        </Routes>
+
+      </BrowserRouter> */}
+      {/* <SignUp />
+      <AuthDetails /> */}
+      {/* <PhoneNumberAuth /> */}
+
+      {/* <Facebook_Auth /> */}
+
+
+
+      {/* <demo /> */}
+
+
+      {/* <C >
+        <C21 />
+        <C22 />
+      </C> */}
+
+      {/* <MyReducer /> */}
+      {/* <AddingItem_REDUX /> */}
 
     </div>
   );
