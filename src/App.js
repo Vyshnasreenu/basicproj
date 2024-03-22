@@ -19,20 +19,20 @@ function App() {
   return (
     <div className="App">
 
-      {/* <RegisterForm/> */}
+      {/* <RegisterForm /> */}
       {/* <TemperatureControlApp/> */}
-      {/* <Filter/> */}
+      {/* <Filter /> */}
 
 
-      {/* <BrowserRouter>
-<Routes>
-  <Route path="/" element={<HomePage/>}></Route>
-  <Route path="/quiz" element={<SimpleQuizApp/>}></Route>
-</Routes>
-</BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/quiz" element={<SimpleQuizApp />}></Route>
+        </Routes>
+      </BrowserRouter>
 
 
-      {/* <NavBar/> */}
+      {/* <NavBar /> */}
 
 
       {/* <Calculator/> */}
@@ -55,19 +55,19 @@ function App() {
       {/* <TodoApp /> */}
 
 
-      {/* <RecipeApp/> */}
+      {/* <RecipeApp /> */}
 
-      <CurrenWeather/>
+      {/* <CurrenWeather/> */}
 
       {/* <BrowserRouter>
-<Routes>
-  <Route path='/' element={<AdventureHome/>}></Route>
-</Routes>
+        <Routes>
+          <Route path='/' element={<AdventureHome />}></Route>
+        </Routes>
 
-</BrowserRouter> */}
+      </BrowserRouter> */}
 
 
-      {/* <CustomPopup/> */}
+      {/* <CustomPopup /> */}
 
     </div>
   );
