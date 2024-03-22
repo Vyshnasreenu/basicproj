@@ -52,10 +52,10 @@ function App() {
 
 
       {/* <NavBar/> */}
-      <TodoApp />
-      <Calculator />
+      {/* <TodoApp /> */}
+      {/* <Calculator /> */}
 
-      <ContactList />
+      {/* <ContactList /> */}
 
       {/* <RecipeApp/> */}
 
