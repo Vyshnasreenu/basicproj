@@ -30,7 +30,7 @@ export const CurrenWeather = () => {
     return (`${dayNames[day]} ${date} ${monthNames[month]} ${year}`)
   }
   const api = {
-    url: `http://api.weatherapi.com/v1/current.json?key=${App_Key}&q=${inputValue}`
+    // url: `http://api.weatherapi.com/v1/current.json?key=${App_Key}&q=${inputValue}`
   }
 
   useEffect(() => {

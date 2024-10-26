@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'fire
 import auth from '../../firebase'
 import { Link, useNavigate } from 'react-router-dom'
 const SignUp = () => {
-    let nav = useNavigate("")
+    let nav = useNavigate("");
     const [mail, setEmail] = useState("")
     const [passWord, setPassword] = useState("")
 

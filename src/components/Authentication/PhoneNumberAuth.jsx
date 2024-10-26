@@ -6,6 +6,10 @@ import 'react-phone-number-input/style.css'
 import auth from '../../firebase'
 const PhoneNumberAuth = () => {
 
+
+    const [confirmObj, setConfirmObj] = useState("")
+    const [value, setValue] = useState("")
+
     const [number, setNumber] = useState("")
     const [numberFlag, setNumberFlag] = useState(false)
 
@@ -16,18 +20,38 @@ const PhoneNumberAuth = () => {
         captcha.render();
         return signInWithPhoneNumber(auth, number, captcha)
     }
-
     const getOtp = async () => {
         if (number === "" || number === undefined || number === null) return setError("Please enter valid phoneNumber")
         setError("")
         try {
             const response = await reCaptcha(number);
             console.log(response)
+            setConfirmObj(response)
         } catch (err) {
             // setError(err)
             console.log(err)
         }
     }
+
+    const verifyOtpFun = async (e) => {
+        // confirmationResult.confirm(code).then((result) => {
+        //     // User signed in successfully.
+        //     const user = result.user;
+        //     // ...
+        // }).catch((error) => {
+        //     // User couldn't sign in (bad verification code?)
+        //     // ...
+        // });
+        if (value === "" || value === null) return;
+        try {
+            await confirmObj.confirm(value).then((res) => {
+                console.log(res)
+            })
+        } catch (error) {
+
+        }
+    }
+
     return (
         <div className='mt-5'>
             <Button color='red' onClick={() => setNumberFlag(true)}>
@@ -46,6 +70,14 @@ const PhoneNumberAuth = () => {
                     </div>
                 </>
             )}
+            <div className='container mt-5'>
+                <div className='col-md-6'>
+                    <input type='text' className='form-control m-2' value={value} onChange={(e) => setValue(e.target.value)} />
+                    <button type='button' className='btn btn-primary' onClick={verifyOtpFun}>Verify Otp</button>
+
+                </div>
+
+            </div>
         </div>
     )
 }

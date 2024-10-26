@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 const AuthDetails = () => {
     const [authUser, setAuthUser] = useState("")
-    let nav = useNavigate("")
+    let nav = useNavigate()
 
     useEffect(() => {
         const listner = onAuthStateChanged(auth, (listen) => {

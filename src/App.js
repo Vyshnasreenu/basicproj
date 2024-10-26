@@ -43,12 +43,12 @@ function App() {
       {/* <Filter/> */}
 
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/quiz" element={<SimpleQuizApp />}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
 
 
       {/* <NavBar/> */}
@@ -91,10 +91,9 @@ function App() {
           <Route path='/signIn' element={<SignIn />}></Route>
           <Route path='/auth' element={<AuthDetails />}></Route>
         </Routes>
-
       </BrowserRouter> */}
-      {/* <SignUp />
-      <AuthDetails /> */}
+      {/* <SignUp /> */}
+      {/* <AuthDetails /> */}
       {/* <PhoneNumberAuth /> */}
 
       {/* <Facebook_Auth /> */}
@@ -109,7 +108,7 @@ function App() {
         <C22 />
       </C> */}
 
-      {/* <MyReducer /> */}
+      <MyReducer />
       {/* <AddingItem_REDUX /> */}
 
     </div>
