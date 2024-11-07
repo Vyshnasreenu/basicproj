@@ -1,14 +1,18 @@
-.main{
-    /* height:"100vh"; */
-    position:"fixed";
-    width:"100%";
-    /* background-color: black; */
+.main {
+  /* height:"100vh"; */
+  position: "fixed";
+  width: "100%";
+  /* background-color: black; */
 }
-.header{
-    /* color: orange; */
-    /* text-shadow: ; */
+
+.header {
+  /* color: orange; */
+  /* text-shadow: ; */
 }
-.shadow:hover{
+
+
+
+.shadow:hover {
   /* background-color: gainsboro; */
   font-size: larger;
 }

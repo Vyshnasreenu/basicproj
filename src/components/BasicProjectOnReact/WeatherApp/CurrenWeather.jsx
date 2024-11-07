@@ -30,7 +30,7 @@ export const CurrenWeather = () => {
     return (`${dayNames[day]} ${date} ${monthNames[month]} ${year}`)
   }
   const api = {
-    // url: `http://api.weatherapi.com/v1/current.json?key=${App_Key}&q=${inputValue}`
+    url: `http://api.weatherapi.com/v1/current.json?key=${App_Key}&q=${inputValue}`
   }
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export const CurrenWeather = () => {
     try {
       const data = await fetch(api.url)
       const jsondata = await data.json();
-      console.log(jsondata)
       setWeatherdata(jsondata)
     } catch (error) {
       alert(error)

@@ -1,24 +1,23 @@
 
-
 export const INTIAL_STATE = {
     firstName: "",
     lastName: "",
     email: '',
     passWord: ''
 }
-const NewFormReducer = (state, action) => {
-    console.log(action)
+const NewFormReducer = (state = INTIAL_STATE, action) => {
     switch (action.type) {
-        // case "change_Input":
-        //     return {
-        //         ...state,
-        //         [action.payload.name]: action.payload.value
-
-        //     }
-        case "submit": return (
-            action.payload.name
-        );
-        // case "Reset": return action.payload.
+        case "change_Input":
+            return {
+                ...state,
+                [action.payload.name]: action.payload.value
+            }
+        case "submit": {
+            return state
+        }
+        case "Reset": {
+            return INTIAL_STATE
+        }
 
         // -----------------------------------------------AddingItem_Redux
         case "CHANGE_INPUT_TYPE": {
@@ -32,7 +31,7 @@ const NewFormReducer = (state, action) => {
         }
 
 
-        default: return null;
+        default: return state;
     }
 }
 // ------------------------------------------------------------

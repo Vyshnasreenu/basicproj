@@ -24,11 +24,11 @@ const Navbar = () => {
   return (
     <div>
       <div>
-        <SignUpBox open={isOpen} onClick={onClick} />
+        <SignUpBox open={isOpen} onClick={onClick} setIsOpen={setIsOpen} />
       </div>
       <nav className='navbar navbar-expand-lg navbar-light'>
         {/* <div className=''> */}
-        <div className='mx-3'><h2>#Adventure</h2></div>
+        <div className='mx-3'><h2> 🏔️ Adventure</h2></div>
         <button
           className="navbar-toggler"
           type="button"
