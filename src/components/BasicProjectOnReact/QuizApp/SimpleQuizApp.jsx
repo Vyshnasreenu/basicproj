@@ -78,38 +78,41 @@ const SimpleQuizApp = () => {
   }
 
   return (
-    <div className="d-flex justify-content-center container position-fixed">
-      <div className="question-box">
-        <div className="heading">
-          <span className='fs-3'>Questions {question + 1}</span>/{Questions.length}
-        </div>
-        {showScore ? <div className='text-info m-5 fs-3'>
-          Your score was {score} out of {Questions.length} <br /> <br />
-          {/* <div className='row border text-center'>
-            <div className='col-md-6 text-center'> */}
-          <Button variant='contained' color='secondary' onClick={() => retakeChanger()}>Retake</Button>
-          {/* </div>
-          </div> */}
-        </div> : (
-          <div className=''>
-            <div className='col Question'>
-              {Questions[question]?.QuestionText}
-            </div>
-            <div className='col'>
-              {Questions[question]?.AnswerQuestions.map((ans) => {
-                return (
-                  <div className='col'>
-                    <br />
-                    <Button variant='contained' color='info' className='col-md-6' onClick={() => SelectAnswer(ans.iscurrect)}>{ans.answerText}</Button>
-                  </div>
-                )
-              })}
-            </div>
-
+    <>
+      <h3 className="text-center m-2">Quiz App</h3>
+      <div className="d-flex justify-content-center  overflow-hidden">
+        <div className="question-box">
+          <div className="heading">
+            <span className='fs-3'>Questions {question + 1}</span>/{Questions.length}
           </div>
-        )}
+          {showScore ? <div className='text-info m-5 fs-3'>
+            Your score was {score} out of {Questions.length} <br /> <br />
+            {/* <div className='row border text-center'>
+            <div className='col-md-6 text-center'> */}
+            <Button variant='contained' color='secondary' onClick={() => retakeChanger()}>Retake</Button>
+            {/* </div>
+          </div> */}
+          </div> : (
+            <div className=''>
+              <div className='col Question'>
+                {Questions[question]?.QuestionText}
+              </div>
+              <div className='col'>
+                {Questions[question]?.AnswerQuestions.map((ans) => {
+                  return (
+                    <div className='col'>
+                      <br />
+                      <Button variant='contained' color='info' className='col-md-6' onClick={() => SelectAnswer(ans.iscurrect)}>{ans.answerText}</Button>
+                    </div>
+                  )
+                })}
+              </div>
+
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

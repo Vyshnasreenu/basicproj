@@ -44,7 +44,7 @@ const Calculator = () => {
       <div className=' w-100  main'>
          <div className="container-fluid d-flex justify-content-center align-items-center ">
             <div className="m-5 shadow px-4 pt-2">
-               <h2 className='header'>MY CALCULATOR APP</h2>
+               <h2 className='header '> MY CALCULATOR APP</h2>
                <div className=''>
                   <input type='text' id="result" className='form-control' value={inputValue} disabled />
                </div>

@@ -18,15 +18,18 @@ const TemperatureControlApp = () => {
   }
   return (
     <div className='' style={{ margin: "10%" }}>
-      {/* <h5>Temperature Control App</h5> */}
+      <h3>Temperature Control App</h3>
       <div className="app-container">
         <div className="temperature-display-container">
           <div className={`temperature-dispaly ${temperatureColor}`}>
             {temperature}&deg;C  <hr />
             {temperatureColor}
           </div>
-          <div className="temperature-container p-4">
-            <Button variant='contained' onClick={(event) => increaseTemperature(event)} value={temperature}>+</Button>
+          <div className="temperature-container p-4 ">
+            <span className="me-2">
+              <Button variant='contained' onClick={(event) => increaseTemperature(event)} value={temperature}>+ </Button>
+            </span>
+            <br />
             <Button variant='contained' onClick={decreaseTemperature} value={temperature}>-</Button>
           </div>
         </div>

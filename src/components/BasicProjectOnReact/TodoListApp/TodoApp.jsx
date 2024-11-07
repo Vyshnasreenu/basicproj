@@ -60,7 +60,7 @@ const TodoApp = () => {
   }
   return (
     <>
-      <h1>TodoListApp</h1>
+      <h1>Todo List</h1>
       <div className='container'>
         <div className='row my-3'>
           <div className='col-md-10 mb-2'>
@@ -69,7 +69,7 @@ const TodoApp = () => {
               placeholder='Add Todo..'
               value={TodoData.inputdata} onChange={onchangeHandler} />
           </div>
-          <div className='col-md-1 text-end'>
+          <div className='col-md-2 text-end'>
             <Button variant='contained'
               sx={{ textTransform: "none" }}
               color='info'
@@ -80,12 +80,12 @@ const TodoApp = () => {
           return (
             <>
               <div className='row p-2 m-auto '>
-                <div className="col-md-6 p-2 border my-2 "
+                <div className="col-md-6 p-1 border my-2 "
                   style={{ backgroundColor: "white", borderRadius: "5px" }}
                 >
                   <span>{item.value}</span>
                 </div>
-                <div className='col-md-6 p-3'>
+                <div className='col-md-6 ps-4'>
                   <div className='row'>
                     <Button
                       variant='contained'
