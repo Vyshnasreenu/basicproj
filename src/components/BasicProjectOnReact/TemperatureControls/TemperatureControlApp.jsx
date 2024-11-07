@@ -17,8 +17,8 @@ const TemperatureControlApp = () => {
     setTemperature(temperature - 1);
   }
   return (
-    <div className='' style={{margin:"10%"}}>
-        <h5>Temperature Control App</h5>
+    <div className='' style={{ margin: "10%" }}>
+      {/* <h5>Temperature Control App</h5> */}
       <div className="app-container">
         <div className="temperature-display-container">
           <div className={`temperature-dispaly ${temperatureColor}`}>

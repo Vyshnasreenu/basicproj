@@ -7,16 +7,18 @@ const MyReducer = () => {
     const [reset, setRes] = useState(state)
 
     const changehandeler = (e) => {
+        console.log(e.target.value)
         dispatch({ type: "change_Input", payload: { name: e.target.name, value: e.target.value } })
     }
     const submithandler = (e) => {
         e.preventDefault();
-        dispatch({ type: "submit", payload: { name: alert("Submit successfully...") } })
+        console.log(state)
+        dispatch({ type: "submit", payload: state })
     }
 
     const resethandler = () => {
-        setRes("")
-        // dispatch({type:"Reset",payload:{clear: state}})
+        // setRes("")
+        dispatch({ type: "Reset" })
     }
     return (
         <div>
@@ -28,7 +30,7 @@ const MyReducer = () => {
                             <label>FirstName</label>
                         </div>
                         <div className='col-md-5'>
-                            <input type='text' className='form-control' name="firstName" onChange={changehandeler} />
+                            <input type='text' className='form-control' name="firstName" value={state?.firstName} onChange={changehandeler} />
                         </div>
                     </div>
                     <div className='row p-2'>
@@ -56,7 +58,7 @@ const MyReducer = () => {
                         </div>
                     </div>
                     <div className='row '>
-                        <div className='d-flex justify-content-center  '>
+                        <div className='d-flex justify-content-center'>
                             <button className='btn btn-success mr-2' type='submit' onClick={submithandler}>Submit</button>
                             <button className='btn btn-danger' type='reset' onClick={resethandler}>Reset</button>
                         </div>

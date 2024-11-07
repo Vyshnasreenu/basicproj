@@ -34,82 +34,27 @@ import PhoneNumberAuth from './components/Authentication/PhoneNumberAuth';
 import { Facebook_Auth } from './components/Authentication/Facebook_Auth';
 import ActiveButtonClick from './components/Learning_React/ActiveButtonClick';
 import { demo } from './components/demo'
+import ParentContainer from './components/ReduxLearning/Container/ParentContainer';
+import Products from './components/ReduxLearning/Container/Products';
+import HomeContainer from './MainReduxContainer/HomeContainer';
+import MainPage from './components/MainREDUXPOINT/MainPage';
+import { useSelector } from 'react-redux';
+import MainHomePage from './MainHomePage';
 function App() {
+  // const state = useSelector((state) => state); // Only for debugging
+
+  // console.log("Redux state in App:", state); // Check if state logs correctly
   return (
     <div className="App">
 
-      {/* <RegisterForm/> */}
-      {/* <TemperatureControlApp/> */}
-      {/* <Filter/> */}
-
-
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/quiz" element={<SimpleQuizApp />}></Route>
+          <Route path='/' />
+          <Route path='/Register' element={<RegisterForm />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
+      <MainHomePage />
 
-
-      {/* <NavBar/> */}
-      {/* <TodoApp /> */}
-      {/* <Calculator /> */}
-
-      {/* <ContactList /> */}
-
-      {/* <RecipeApp/> */}
-
-      {/* <CurrenWeather /> */}
-
-      {/* <BrowserRouter>
-<Routes>
-  <Route path='/' element={<AdventureHome/>}></Route>
-</Routes>
-
-</BrowserRouter> */}
-
-
-      {/* <ActiveButtonClick /> */}
-
-
-
-
-
-
-
-      {/* <CustomPopup/> */}
-
-
-
-
-      {/* AUTHENTICATION USING FIREBASE  */}
-
-      {/* <SignIn /> */}
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<SignUp />}></Route>
-          <Route path='/signIn' element={<SignIn />}></Route>
-          <Route path='/auth' element={<AuthDetails />}></Route>
-        </Routes>
-      </BrowserRouter> */}
-      {/* <SignUp /> */}
-      {/* <AuthDetails /> */}
-      {/* <PhoneNumberAuth /> */}
-
-      {/* <Facebook_Auth /> */}
-
-
-
-      {/* <demo /> */}
-
-
-      {/* <C >
-        <C21 />
-        <C22 />
-      </C> */}
-
-      <MyReducer />
-      {/* <AddingItem_REDUX /> */}
 
     </div>
   );

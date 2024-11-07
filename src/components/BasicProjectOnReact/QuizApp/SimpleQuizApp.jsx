@@ -57,13 +57,11 @@ const SimpleQuizApp = () => {
     if (iscurrect) {
       setscore(score + 1);
     }
-    //  console.log(Questions.length)
     if (question === Questions.length - 1) {
       setShowscore(true)
     }
     else {
       setNxtQuuestion(question + 1)
-
     }
   }
 
@@ -74,30 +72,24 @@ const SimpleQuizApp = () => {
   }
 
   const SubmitQuiz = (e) => {
-    console.log(e.target)
     setTimeout(() => {
       alert("Submit successfully!!!")
     }, 100);
   }
 
   return (
-    <div className="d-flex justify-content-center container">
+    <div className="d-flex justify-content-center container position-fixed">
       <div className="question-box">
         <div className="heading">
           <span className='fs-3'>Questions {question + 1}</span>/{Questions.length}
         </div>
         {showScore ? <div className='text-info m-5 fs-3'>
           Your score was {score} out of {Questions.length} <br /> <br />
-          <div className='row'>
-            <div className='col-md-6'>
-              <Button variant='contained' color='secondary' onClick={() => retakeChanger()}>Retake</Button>
-            </div>
-            <div className='col-md-6'>
-              {/* <Link to="/"> */}
-              <Button variant='contained' color='success' startIcon={<DoneAll />} onClick={(e) => SubmitQuiz(e)}>Submit</Button>
-              {/* </Link> */}
-            </div>
-          </div>
+          {/* <div className='row border text-center'>
+            <div className='col-md-6 text-center'> */}
+          <Button variant='contained' color='secondary' onClick={() => retakeChanger()}>Retake</Button>
+          {/* </div>
+          </div> */}
         </div> : (
           <div className=''>
             <div className='col Question'>

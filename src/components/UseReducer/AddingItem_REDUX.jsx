@@ -8,8 +8,6 @@ const AddingItem_REDUX = () => {
     const changeHandler = (e) => {
         dispatch({ type: "CHANGE_INPUT_TYPE", payload: { name: e.target.name, value: e.target.value } })
     }
-    console.log(data, "data")
-
 
 
     const addItems = (e) => {

@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div>
       <div>
-        <SignUpBox open={isOpen} onClick={onClick} />
+        <SignUpBox open={isOpen} onClick={onClick} setIsOpen={setIsOpen} />
       </div>
       <nav className='navbar navbar-expand-lg navbar-light'>
         {/* <div className=''> */}

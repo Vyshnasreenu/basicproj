@@ -5,7 +5,7 @@ const TodoApp = () => {
   const [TodoData, setTodoData] = useState(
     {
       inputdata: "",
-      inputStore: [{ id: 0, value: "TODO APP" }],
+      inputStore: [{ id: 0, value: "Defalut Todo 😊❤️" }],
       isSubmit: false,
     })
 
@@ -53,53 +53,67 @@ const TodoApp = () => {
 
   }
   const DeleteTodo = (index) => {
-    //  setTodoData((prevData)=>{
-    //    const newData=[...prevData.inputStore]             //this code also  work...
-    //    newData.splice(index,1)
-    //    return{
-    //     ...newData, inputStore:newData
-    //    }
-    //  })
     const newData = { ...TodoData }
     newData.inputStore.splice(index, 1)
     setTodoData(newData)
     alert("Deleted succussfully!!!")
   }
   return (
-    <div className='h-100'>
-      <div>
-        <h1>TodoListApp</h1>
-      </div>
-      <div className='m-5 row'>
-        <div className='col-10 '>
-          <input type="text" className='form-control bg-dark text-warning p-2' value={TodoData.inputdata} onChange={onchangeHandler} />
-        </div>
-        <div className='col-1 '>
-          <Button variant='contained' color="secondary" onClick={AddData} >ADD</Button>
-        </div>
-      </div>
-      {TodoData.inputStore.map((item, index) => {
-        return (
-          <div key={index}>
-            <div className='d-flex justify-content-center' >
-              <div className="m-2 col-6" style={{ backgroundColor: "gray", borderRadius: "10px" }}>
-                <a className='nav-link m-1' href=' #'>{item.value}</a>
-              </div>
-              <div className='d-flex'>
-                <div className='p-2 '>
-                  <Button variant='contained' color='info' onClick={(event) => EditTodo(event, index)} startIcon={<EditNotifications />} />
-                </div>
-                <div className='p-2'>
-                  <Button variant='contained' color='error' onClick={() => DeleteTodo(index)} startIcon={<DeleteOutline />}></Button>
-                </div>
-              </div>
-              <div>
-              </div>
-            </div>
+    <>
+      <h1>TodoListApp</h1>
+      <div className='container'>
+        <div className='row my-3'>
+          <div className='col-md-10 mb-2'>
+            <input type="text"
+              className='form-control'
+              placeholder='Add Todo..'
+              value={TodoData.inputdata} onChange={onchangeHandler} />
           </div>
-        )
-      })}
-    </div>
+          <div className='col-md-1 text-end'>
+            <Button variant='contained'
+              sx={{ textTransform: "none" }}
+              color='info'
+              onClick={AddData} > + Add</Button>
+          </div>
+        </div>
+        {TodoData.inputStore.map((item, index) => {
+          return (
+            <>
+              <div className='row p-2 m-auto '>
+                <div className="col-md-6 p-2 border my-2 "
+                  style={{ backgroundColor: "white", borderRadius: "5px" }}
+                >
+                  <span>{item.value}</span>
+                </div>
+                <div className='col-md-6 p-3'>
+                  <div className='row'>
+                    <Button
+                      variant='contained'
+                      color='inherit'
+                      className='col-2 mx-2'
+                      sx={{ textTransform: "none" }}
+                      onClick={(event) => EditTodo(event, index)}
+                    >
+                      ✏️ Edit
+                    </Button>
+                    <Button variant='contained'
+                      color='error'
+                      className='col-2'
+                      sx={{ textTransform: "none" }}
+                      onClick={() => DeleteTodo(index)}
+                    >
+                      ❌ Delete
+                    </Button>
+                  </div>
+                </div>
+                <div>
+                </div>
+              </div >
+            </>
+          )
+        })}
+      </div >
+    </ >
   )
 }
 export default TodoApp
